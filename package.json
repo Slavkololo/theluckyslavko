@@ -13,6 +13,7 @@
     "parcel": "^2.0.0-rc.0"
   },
   "dependencies": {
+    "reset": "^0.1.0",
     "reset-css": "^5.0.1"
   }
 }

@@ -1,0 +1,24 @@
+
+* {
+    font-family: IBM Plex Sans,sans-serif;
+}
+
+#page {
+    min-height: 100vh;
+}
+.core {
+    @media screen and (max-width: 660px) {
+        padding-top: 15px;
+    }
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.header {
+
+}
