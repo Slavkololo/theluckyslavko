@@ -4,16 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel src/index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0"
+    "parcel": "1.12.3",
+    "sass": "^1.38.2"
   },
   "dependencies": {
-    "reset": "^0.1.0",
     "reset-css": "^5.0.1"
   }
 }
