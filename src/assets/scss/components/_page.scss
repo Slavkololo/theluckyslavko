@@ -27,6 +27,12 @@
         padding-top: 15px;
     }  
 
+    .header__logo {
+        width: 40px;
+        background-repeat: no-repeat;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0zNC4wNzUgMTUuNDY0Yy0xLjktNC4yNzItNy45NjYtMy4zODgtMTIuMTc5LTMuMzg4bC0zLjU5MiAxNS43aDUuODE2YzIuODY3IDAgNS41Ni0uNDkgNy41ODMtMi40MzJhMTAuMjI4IDEwLjIyOCAwIDAwMi4zNzItOS44OHptLTMuNzE3IDQuNDVjLS40MzEgMS44ODgtLjg3OCAzLjkyLTMuMiA0LjcxNGExNC4zMTEgMTQuMzExIDAgMDEtNC40Ny4yNjZsMi4yOS05LjkzNmMxLjI5MSAwIDMuMjQxLS4yODggNC40MTMuMjU4IDIuMDIuOTQ4IDEuMzMzIDMuMTE2Ljk2NiA0LjY5OHpNNiAyOGwzLjU5LTE1LjdoMy43MTdsLTIuOTIxIDEyLjgyMmg2LjU2MUwxNi4yODMgMjh6IiBmaWxsPSIjZjYyNDY1Ii8+PC9zdmc+);
+    }
+
     .header__text {
         display: none;
     }
@@ -114,17 +120,28 @@
 
 
     &__logo {
-        width: 40px;
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0zNC4wNzUgMTUuNDY0Yy0xLjktNC4yNzItNy45NjYtMy4zODgtMTIuMTc5LTMuMzg4bC0zLjU5MiAxNS43aDUuODE2YzIuODY3IDAgNS41Ni0uNDkgNy41ODMtMi40MzJhMTAuMjI4IDEwLjIyOCAwIDAwMi4zNzItOS44OHptLTMuNzE3IDQuNDVjLS40MzEgMS44ODgtLjg3OCAzLjkyLTMuMiA0LjcxNGExNC4zMTEgMTQuMzExIDAgMDEtNC40Ny4yNjZsMi4yOS05LjkzNmMxLjI5MSAwIDMuMjQxLS4yODggNC40MTMuMjU4IDIuMDIuOTQ4IDEuMzMzIDMuMTE2Ljk2NiA0LjY5OHpNNiAyOGwzLjU5LTE1LjdoMy43MTdsLTIuOTIxIDEyLjgyMmg2LjU2MUwxNi4yODMgMjh6IiBmaWxsPSIjZjYyNDY1Ii8+PC9zdmc+);
+        width: 184px;
+        background-image: url(https://i.gstatvb.com/443f12ae58703b7caca9bc908a4ad210.rng.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
     }
 
     &__btn-wrapper {
-  
+        display: flex;
+        align-items: center;
+        color: #fff;
     }
 
     &__text {
-        
+        margin-right: 16px;
     }
+
+    &__btw-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
     &__btn {
         min-width: 112px;
         min-height: 40px;
@@ -148,6 +165,18 @@
 
 .description {
     color: #fff;
+
+    &__header {
+        letter-spacing: .9px;
+        font-size: 56px;
+        line-height: 72px;
+    }
+
+    &__text {
+        letter-spacing: .45px;
+        font-size: 28px;
+        line-height: 37px;
+    }
 }
 
 .registr {
@@ -164,7 +193,7 @@
 }
 
 .video {    
-    max-width: 100vw;
+    width: 100%;
 }
 
 .video::after {
