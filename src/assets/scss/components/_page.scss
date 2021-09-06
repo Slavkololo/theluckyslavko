@@ -106,7 +106,9 @@
 .core {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
+    flex-grow: 1;
+    padding-top: 38px;
     
 }
 
@@ -154,13 +156,19 @@
 
         font-size: 14px;
         letter-spacing: .56px;
+        transition: .1s;
     }
 }   
+
+.header__btn:hover {
+    background: #f73c76;
+    transition: .1s;
+}
 
 .main {
     display: flex;
     position: relative;
-    
+    justify-content: space-between;
 }
 
 .description {
@@ -180,9 +188,37 @@
 }
 
 .registr {
+    padding: 40px;
     border-radius: 8px;
     background: #fff;
-    padding: 20px;
+    
+    &__header {
+        letter-spacing: .19px;
+        color: #30455c;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        height: 81px;
+        margin-bottom: 36px;
+        border-bottom: 1px solid #f0f2f4;
+    }
+
+    &__lable {
+        display: block;
+        letter-spacing: .48px;
+        text-transform: uppercase;
+        color: #5e6e80;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+    }
+
+    &__btn {
+        border-radius: 8px;
+        min-width: 112px;
+        min-height: 40px;
+        background: #f73c76;
+    }
 }
 
 .video-wrapper {
