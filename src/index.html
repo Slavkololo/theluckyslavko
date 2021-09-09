@@ -23,21 +23,22 @@
                         <p class="description__text">Dating platform that is worth your time</p>
                     </div>
                     <div class="registr">
-                        <h3 class="regisrt__header">Sign Up by answering a few questions</h3>
+                        <h3 class="registr__header">Sign Up by answering a few questions</h3>
                         <form action="">
-                            <label for="name" class="regisrt__lable">NAME</label><br>
-                            <input type="text" id="name" placeholder="Name">
+                            <label for="name" class="registr__lable">NAME</label><br>
+                            <input type="text" id="name" placeholder="Name" class="input">
 
-                            <label for="pref" class="regisrt__lable">PREFERENCE</label><br>
+                            <label for="pref" class="registr__lable">PREFERENCE</label><br>
 
-                            <select name="pref" id="pref">
+                            <select name="pref" id="pref" class="input">
                                 <option value="male">Man seeking a Woman</option>
                                 <option value="female">Woman seeking a Man</option>
                             </select>
 
-                            <label for="bday" class="regisrt__lable">BIRTHDAY</label><br>
+                            <label for="bday" class="registr__lable">BIRTHDAY</label><br>
 
-                            <select name="month" id="month">
+                            <div class="date-wrapper">
+                                <select name="month" id="month" class="input date-wrapper__month">
                                 <option value selected="selected" hidden>Month</option>
                                 <option value="1">January</option>
                                 <option value="2">February</option>
@@ -51,59 +52,66 @@
                                 <option value="10">October</option>
                                 <option value="11">November</option>
                                 <option value="12">December</option>
-                            </select>
+                                </select>
 
-                            <select name="day" id="day">
-                                <option value selected="selected" hidden="">Day</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                            </select>
+                                <select name="day" id="day" class="input date-wrapper__day">
+                                    <option value selected="selected" hidden="">Day</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
 
-                            <select name="year" id="year">
-                                <option value selected="selected" hidden="">Year</option>
-                                <option value="1">1995</option>
-                                <option value="2">1996</option>
-                                <option value="3">1997</option>
-                                <option value="4">1998</option>
-                                <option value="5">1999</option>
-                            </select>
+                                <select name="year" id="year" class="input date-wrapper__year">
+                                    <option value selected="selected" hidden="">Year</option>
+                                    <option value="1">1995</option>
+                                    <option value="2">1996</option>
+                                    <option value="3">1997</option>
+                                    <option value="4">1998</option>
+                                    <option value="5">1999</option>
+                                </select>
+                            </div>
+                                
                         </form>
-                        <div>
+                        <div class="registr__btn-wrapper">
                             <button class="registr__btn">Continue</button>
+                        </div>
+
+                        <div class="navigation">    
+                            <div class="navigation__block active"></div>
+                            <div class="navigation__block"></div>
                         </div>
                     </div>
                 </main>
                 <div class="video-wrapper">
-                    <video src="https://d2e6sqyvgtyy8n.cloudfront.net/cc07333d-15d5-4053-b8c5-af955510395c/kjl8tipxan8-hd.mp4" poster="https://i.gstatvb.com/239b1839e5b28d448ed3fb1a9a40dc43.rng.jpg" autoplay="" loop="" class="video"></video>
+                    <video src="https://d2e6sqyvgtyy8n.cloudfront.net/cc07333d-15d5-4053-b8c5-af955510395c/kjl8tipxan8-hd.mp4" poster="https://i.gstatvb.com/239b1839e5b28d448ed3fb1a9a40dc43.rng.jpg" autoplay="autoplay" loop="loop" class="video"></video>
                 </div>
             </div>
             <footer class="footer">
