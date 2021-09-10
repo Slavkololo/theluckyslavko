@@ -358,6 +358,25 @@ body {
         margin: 50px auto 35px;
     }
 
+    .description__header {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .description__text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .date-wrapper {
+        flex-direction: column; 
+    }
+
+    .date-wrapper__month, .date-wrapper__day, .date-wrapper__year {
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
     .video {
         height: 42%;
     }
@@ -390,6 +409,16 @@ body {
     .description {
         margin: 90px auto 50px;
         text-align: center;
+    }
+
+    .description__header {
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .description__text {
+        font-size: 22px;
+        line-height: 32px;
     }
 
     .video {
