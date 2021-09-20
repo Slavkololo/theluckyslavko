@@ -17,13 +17,14 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    z-index: 1;
+    z-index: 2;
 }
 
 
 
 .body {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between; 
     flex-grow: 1;
@@ -161,6 +162,7 @@ body {
         border-radius: 8px;
         background: #f73c76;
         color: #fff;
+        cursor: pointer;
         border: none;
 
         font-weight: 600;
@@ -235,12 +237,12 @@ body {
     height: 100%;
 }
 
-.video::after { 
+.video-wrapper::before{ 
     content: "";
     position: absolute;
     z-index: 1;
     bottom: -1px;
-    width: 100%;
+    width: 100vw;
     min-height: 83px;
   
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQwLjAyNSIgaGVpZ2h0PSI3MS42NTkiPjxwYXRoIGQ9Ik0xNDQwIDM0LjU2Yy04My43NDcuMDc2LTIxMS45Ni0xLjA0NS0zNjYtNy42NzgtMTQzLjU2Mi02LjE4Mi0yNDMuMjg2LTE0LjMtMjgzLTE3LjIwOUM2NDAuMzQ5LTEuMzcyIDM5Ny4yMTItNy42MjEgMCAxNy4zNTF2NTQuMzA1cTcxOS41LS4wMTYgMTQ0MCAwYy4wNjQuMTExLS4wMTYtMzYuOTg1IDAtMzcuMDk2eiIgZmlsbD0iI2Y1ZjdmYSIvPjwvc3ZnPg==) 50%/cover no-repeat;
@@ -277,6 +279,7 @@ body {
     &__info {
         max-width: 23rem;
         margin: 0 auto;
+        text-align: center;
     }
 
     &__nav {
@@ -356,8 +359,7 @@ body {
 }
 
 
-
-
+                    //MEDIA
 
 
 @media screen and (max-width:1440px) {
@@ -381,9 +383,8 @@ body {
         padding: 0 15px;
     }
 
-    .core {
-       /* -webkit-box-flex: unset;
-        flex-grow: unset; */
+    .body {
+        flex-grow: unset;
     }
 
     .main {
@@ -406,7 +407,7 @@ body {
         line-height: 32px;
     }
 
-    .video, .video-wrapper::after {
+    .video-wrapper {
         height: 55%;
     }
 
@@ -421,7 +422,7 @@ body {
         max-width: 100%;
     }
 
-    .core {
+    .body {
         padding-top: 15px;
     }  
 
@@ -462,7 +463,7 @@ body {
         width: 100%;
     }
 
-    .video, .video-wrapper::after {
+    .video-wrapper {
         height: 42%;
     }
 
@@ -491,6 +492,10 @@ body {
             flex-direction: column;
             align-items: center;
             text-align: center;
+        }
+
+        &__cards {
+            justify-content: center;
         }
     }
 
