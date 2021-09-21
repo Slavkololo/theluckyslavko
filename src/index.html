@@ -6,14 +6,14 @@
         <title>theluckyslavko</title>
     </head>
 
-    <body>
+    <body class="login">
         <div id="page">
             <div class="body">
                 <header class="header container">
                     <div class="header__logo"></div>
                     <div class="header__btn-wrapper">
                         <p class="header__text">Already have an account?</p>
-                        <button class="header__btn">Sign in</button>
+                        <button id="signin" class="header__btn">Sign in</button>
                     </div>
                 </header>
 
@@ -98,13 +98,13 @@
                                     <option value="5">1999</option>
                                 </select>
                             </div>
-                                
+
                         </form>
                         <div class="registr__btn-wrapper">
                             <button class="registr__btn">Continue</button>
                         </div>
 
-                        <div class="navigation">    
+                        <div class="navigation">
                             <div class="navigation__block active"></div>
                             <div class="navigation__block"></div>
                         </div>
@@ -113,7 +113,7 @@
                 <div class="video-wrapper">
                     <video src="https://d2e6sqyvgtyy8n.cloudfront.net/cc07333d-15d5-4053-b8c5-af955510395c/kjl8tipxan8-hd.mp4" poster="https://i.gstatvb.com/239b1839e5b28d448ed3fb1a9a40dc43.rng.jpg" autoplay="autoplay" loop="loop" class="video"></video>
                 </div>
-                   
+
             </div>
             <footer class="footer">
                 <div class="footer-wrapper container">
@@ -150,5 +150,13 @@
                 </div>
             </footer>
         </div>
+
+        <script>
+            document.getElementById('signin').addEventListener('click', () => {
+                document.body.classList.toggle('signin');
+                document.body.classList.toggle('login');
+            })
+        </script>
+
     </body>
 </html>
