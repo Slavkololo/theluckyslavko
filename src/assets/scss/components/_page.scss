@@ -117,11 +117,25 @@ body {
     }
 }
 
+.lable {
+    letter-spacing: .48px;
+    text-transform: uppercase;
+    color: #30455c;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;      
+}
+
+.signin .registr1 {
+    display: none;
+}
+.login .registr2 {
+    display: none;
+}
 
 .registr {
     width: 100%;
     max-width: 384px;
-    height: 100%;
     min-height: 472px;
     max-height: 536px;
 
@@ -141,15 +155,6 @@ body {
         font-size: 24px;
         font-weight: 600;
         line-height: 32px;
-    }
-
-    &__lable {
-        letter-spacing: .48px;
-        text-transform: uppercase;
-        color: #30455c;
-        font-size: 12px;
-        font-weight: 600;
-        line-height: 15px;      
     }
 
     &__btn-wrapper {
@@ -198,6 +203,26 @@ body {
             background: #f0f2f4;
         }
     }
+
+.forgot-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.forgot-btn {
+    cursor: pointer;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: #f62465;
+    border: none;
+    outline: 0;
+    background: 0 0;
+    font: 700 10px/13px IBM Plex Sans;
+    font-size: 10px;
+    line-height: 13px;
+}
 
 .input {
     width: 100%;
