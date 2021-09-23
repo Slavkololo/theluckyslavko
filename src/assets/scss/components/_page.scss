@@ -99,7 +99,7 @@
     padding-bottom: 30px;
 }
 
-.description {
+.main-description {
     margin-bottom: 128px;
     color: #fff;
 
@@ -180,29 +180,29 @@
     }
 }
 
-.navigation__block:active {
+.registr-navigation__block:active {
     pointer-events: none;
     background: #f62465;
 }
 
-.navigation .active {
+.registr-navigation .active {
     pointer-events: none;
     background: #f62465;
 }
 
-    .navigation {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+.registr-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 
-        &__block{
-            width: 32px;
-            height: 4px;
-            margin: 5px;
-            border-radius: 2px;
-            background: #f0f2f4;
-        }
+    &__block{
+        width: 32px;
+        height: 4px;
+        margin: 5px;
+        border-radius: 2px;
+        background: #f0f2f4;
     }
+}
 
 .forgot-wrapper {
     display: flex;
@@ -334,7 +334,7 @@
         line-height: 13px;
     }
 
-    &__supp {
+    &__content {
         display: flex;
         justify-content: space-between;
         align-items: end;
@@ -417,17 +417,17 @@
         align-items: center;
     }   
 
-    .description {
+    .main-description {
         margin: 90px auto 50px;
         text-align: center;
     }
 
-    .description__header {
+    .main-description__header {
         font-size: 35px;
         line-height: 46px;
     }
 
-    .description__text {
+    .main-description__text {
         font-size: 22px;
         line-height: 32px;
     }
@@ -465,16 +465,16 @@
 
     }
 
-    .description {
+    .main-description {
         margin: 50px auto 35px;
     }
 
-    .description__header {
+    .main-description__header {
         font-size: 22px;
         line-height: 29px;
     }
 
-    .description__text {
+    .main-description__text {
         font-size: 14px;
         line-height: 24px;
     }
@@ -513,7 +513,7 @@
             flex-direction: column;
         }
 
-        &__supp {
+        &__content {
             flex-direction: column;
             align-items: center;
             text-align: center;
