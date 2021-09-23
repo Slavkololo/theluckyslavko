@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
 }
-body {
+.content {
     font-family: IBM Plex Sans,sans-serif;
 }
 
@@ -22,7 +22,7 @@ body {
 
 
 
-.body {
+.content {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -307,7 +307,7 @@ body {
         text-align: center;
     }
 
-    &__nav {
+    &__doc {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 25px;
@@ -408,7 +408,7 @@ body {
         padding: 0 15px;
     }
 
-    .body {
+    .content {
         flex-grow: unset;
     }
 
@@ -447,7 +447,7 @@ body {
         max-width: 100%;
     }
 
-    .body {
+    .content {
         padding-top: 15px;
     }  
 
@@ -509,7 +509,7 @@ body {
     .footer {
         padding-bottom: 25px;
 
-        &__nav {
+        &__doc {
             flex-direction: column;
         }
 
@@ -524,7 +524,7 @@ body {
         }
     }
 
-    .lowest {
+    .supp, .copyright-revised {
         margin-bottom: 25px;
     }
 }
